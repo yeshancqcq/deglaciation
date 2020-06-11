@@ -1,1 +1,58 @@
 # deglaciation
+
+# Step 1. Extract data from the LipD:
+Use: 
+lipd.R to get temperature data;
+Get datafiles in the lipd2csv folder;
+lipd_meta.R to get metadata from LipD;
+Get the metadata.csv file;
+lipd_depth_et.R to get geochronological data from LipD;
+Get datafiles in the lipd_chron folder;
+
+
+# Step 2. Interpolation / Anomaly construction
+Use interpolation_anomaly.R to generate the interpolated datasets, and calculate the anomaly (base: 8000 - 12000 bp).
+Data files in the anomaly_interpolated folder
+
+# Step 3. Join interpolated temperature and anomaly to metadata -- prepare for the spatiotemporal reconstruction
+Use join.R
+Better to have a helper.csv file prepared from excel.
+This file should only contains fieldnames from t0 to t22000
+Results: 2 metadata files (anomaly_metadata.csv and temperature_metadata.csv)
+
+# Step 4. Spatiotemporal reconstruction.
+If using ArcGIS: 
+Import the csv metadata and convert it into a point shapefile
+Preparing girds with Grid_Index_Feature, Then
+Point To Raster --> Zonal Statistics as table--> Join back to the shapefile
+
+If using ArcPy:
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/arcgis.py
+
+Without ArcPy:
+TBA
+
+# Step 5. Regional average
+With or without model
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/regional_construction.R
+
+# Step 6. Data model comparison
+Generating coordinates for model outputs (.nc files)
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/coor_gen.R
+
+# Visualization
+Regional plots:
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/plot_regional.R
+
+Plot LipD metadata:
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/meta_plot.R
+
+Plot maps in R:
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/map.R
+
+Automatically plot spatiotemporal reconstructions in ArcPy/ArcGIS (need to set up the mxd and symbol layer in the desktop)
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/symbol.lyr
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/Untitled.mxd
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/paleo_process1.mxd
+https://github.com/yeshancqcq/paleo_data_spatial/blob/master/mapping_series.py
+
