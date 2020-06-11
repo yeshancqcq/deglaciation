@@ -3,22 +3,30 @@
 ## Step 1. Extract data from the LipD:
 Use: 
 lipd.R to get temperature data;
+https://github.com/yeshancqcq/deglaciation/blob/master/lipd.R
 Get datafiles in the lipd2csv folder;
 lipd_meta.R to get metadata from LipD;
+https://github.com/yeshancqcq/deglaciation/blob/master/lipd_meta.R
 Get the metadata.csv file;
 lipd_depth_et.R to get geochronological data from LipD;
+https://github.com/yeshancqcq/deglaciation/blob/master/lipd_depth_et.R
 Get datafiles in the lipd_chron folder;
+
+https://github.com/yeshancqcq/GEO420_data
+Previous data (Shakun and Marcott papers) are in the GEO_420 repository.
 
 
 ## Step 2. Interpolation / Anomaly construction
 Use interpolation_anomaly.R to generate the interpolated datasets, and calculate the anomaly (base: 8000 - 12000 bp).
 Data files in the anomaly_interpolated folder
+https://github.com/yeshancqcq/deglaciation/blob/master/interpolation_anomaly.R
 
 ## Step 3. Join interpolated temperature and anomaly to metadata -- prepare for the spatiotemporal reconstruction
 Use join.R
 Better to have a helper.csv file prepared from excel.
 This file should only contains fieldnames from t0 to t22000
 Results: 2 metadata files (anomaly_metadata.csv and temperature_metadata.csv)
+https://github.com/yeshancqcq/deglaciation/blob/master/join.R
 
 ## Step 4. Spatiotemporal reconstruction.
 If using ArcGIS: 
