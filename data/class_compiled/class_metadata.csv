@@ -1,0 +1,101 @@
+﻿ID,geometry,Author,Shakun_id,Marcott_id,Location,Proxy Type,Lat (°),Lon (°),Elev/Depth (m a.s.l),Avg. Resolution,Season_int,Reference,Notes,Temperature Calibration Used,Calibration Equation,Additional Age Model Reference,Uploader
+1,Point,Thornalley,0,0,RAPiD-10-1P,Mg/Ca - N. Pachy,62.975,-17.5894,-1237,111,Summer,"Thornalley et al., 2011",,"Elderfield and Ganssen, 2000",Mg/Ca = 0.52 exp (0.1 × T),"Thornalley et al., 2010a,b",Jones
+2,Point,Thornalley,0,0,RAPiD-15-4P,Mg/Ca - N. Pachy,62.2931,-17.1334,-2133,162,Summer,"Thornalley et al., 2011",,"Elderfield and Ganssen, 2000",Mg/Ca = 0.52 exp (0.1 × T),"Thornalley et al., 2010a,b",Jones
+3,Point,Thornalley,0,0,RAPiD-15-4P,Mg/Ca - G. Bulloides,62.2931,-17.1334,-2133,162,,"Thornalley et al., 2011",,"Thornalley et al., 2009",Mg/Ca = 0.794 exp (0.1 × T),"Thornalley et al., 2010a,b",Jones
+4,Point,Thornalley,0,0,RAPiD-15-4P,Mg/Ca - G. Inflata,62.2931,-17.1334,-2133,162,Subsurface,"Thornalley et al., 2011",Intermediate depth foram,"Thornalley et al., 2009",Mg/Ca = 0.76 exp (0.1 × T),"Thornalley et al., 2010a,b",Jones
+5,Point,Max,0,0,SO201-2-114KL,UK'37,59.2307,166.9888,-1394,90,Summer-Fall,Max et al. 2012,,,,,Marcott
+6,Point,Praetorius,0,0,EW0408-66JC,UK’37,58.87,-137.1,-426,100,Summer,"Praetorius et al., 2016",,"Prahl et al., 1988",,,Jones
+7,Point,Max,0,0,SO201-2-85,UK'37,57.5050,170.4132,-975,200,Summer-Fall,Max et al. 2012,,,,,Marcott
+8,Point,Riethdorf,0,0,SO201-2-85,Mg/Ca - N. pachy sin.,57.5050,170.4132,-975,455,,Riethdorf et al. 2013,,,,,Hupp
+9,Point,Praetorius,0,0,EW0408-26TCJC,UK’37,56.96,-136.43,-1623,64,Summer,"Praetorius et al., 2016",,"Prahl et al., 1988",,,Jones
+10,Point,Max,0,0,SO201-2-77,UK'37,56.3303,170.6988,-2130,250,Summer-Fall,Max et al. 2012,,,,,Marcott
+11,Point,Riethdorf,0,0,SO201-2-77,Mg/Ca - N. pachy sin.,56.3303,170.6988,-2130,437,,Riethdorf et al. 2013,,,,,Hupp
+12,Point,Max,0,0,SO201-2-12KL,UK'37,53.9927,162.3758,-2173,120,Summer-Fall,Max et al. 2012,,,,,Marcott
+13,Point,Riethdorf,0,0,SO201-2-12KL,Mg/Ca - N. pachy sin.,53.9927,162.3758,-2173,141,,Riethdorf et al. 2013,,,,,Hupp
+14,Point,Max,0,0,LV29-114-3,UK'37,49.3757,152.8779,-1762,200,Summer-Fall,Max et al. 2012,,,,,Marcott
+15,Point,Riethdorf,0,0,LV29-114-3,Mg/Ca - N. pachy sin.,49.3757,152.8779,-1762,183,,Riethdorf et al. 2013,,"Kozdon et al., 2009",Mg/Ca= .13T + 0.35,,Hupp
+16,Point,Affolter,0,0,MilandreCave_M6-M8,fluid inclusion dD,47.4855,7.0161,420,50,Annual,Affolter et al. 2019,Two speleothems (M6 & M8); no combined depth provided,,,,Marcott
+17,Point,Watson,0,0,Silver_Lake,GDGT,41.354167,-83.8125,332,75,Annual,"Watson et al., 2018",Soil temperature,"Weijers et al., 2007a",MAT=(MBT - 0.122 - (0.187xCBT))/0.02,,Jones
+18,Point,Fastovich,0,0,Bonnet_Lake ,GDGT,40.667,-82.1370,285,120,,D. Fastovich et al. (in revision) &  D. Fastovich et al. (in-prep),Unpublished - DO NOT USE BEFORE PUBLICATION,,,,McDowell
+19,Point,Hou,0,0,LQDP05-1Fs,UK'37,38.8112,100.37,3192,85,Summer,"Hou et al., 2016",,"Wang and Liu, 2012",UK'37 = 0.05613 T–1.1781 ,"An et al., 2012",Jones
+20,Point,Fastovich,0,0,Cupola_Pond,GDGT,36.799,-91.089,243,345,,D. Fastovich et al. (in prep) ,Unpublished - DO NOT USE BEFORE PUBLICATION,,,"R.A. Jones et al., 2017",McDowell
+21,Point,Jiménez-Amat and Zahn,0,0,ODP-976,Mg/Ca - G. Bulloides,36.20,-4.30, -1108,129,Springtime subsurface (bull.),Jiménez-Amat and Zahn 2015,,"Elderfield and Ganssen, 2000",,"Combourieu Nebout, N., Turon, J.L., Zahn, R., Capotondi, L., Londeiz, L., and Pahnke, K., 2002, ",Hupp
+22,Point,Martrat,0,0,ODP-976,UK'37,36.20,-4.30, -1108,38,Annual (or winter),Martrat et al. 2014,,,,,Hupp
+23,Point,Rodrigo-Gamiz,0,0,TTR-12-293G,UK'37,36.17357,-2.75467,-1840,201,Annual/Spring* check this,"Rodrigo-Gamiz et al., 2014","* In Dauner et al., 2019, they say that UK'37 is summer proxy in RG14 (this paper)","Muller et al., 1998",,"Rodrigo-gamiz et al., 2011",Jones
+24,Point,Rodrigo-Gamiz,0,0,TTR-12-293G,LDI,36.17357,-2.75467,-1840,201,Summer-Autumn,"Rodrigo-Gamiz et al., 2014",,"Rampen et al., 2012",,"Rodrigo-gamiz et al., 2011",Jones
+25,Point,Martrat ,0,0,MD95-2043,UK'37,36.10,-2.60,-1841,132,,Martrat et al. 2014,,,,,Hupp
+26,Point,Krause,0,0,White_Pond ,GDGT,34.16667,-80.775,90,240,,T. R. Krause et al. 2018,,,,,McDowell
+27,Point,Clemens,0,0,IODPU1429,UK’37,31.617333,128.9975,-732,165,,"Clemens et al., 2018",,"Prahl et al., 1988",UK’37 = 0.034 T + 0.039 ,,Jones
+28,Point,Clemens,0,0,IODPU1429,Mg/Ca - G.ruber w.,31.617333,128.9975,-732,165,,"Clemens et al., 2018",,"Tierney et al., 2016",,,Jones
+29,Point,Fastovich,0,0,Sheelar_Lake,GDGT,29.8392,-81.9579,144,210,,D. Fastovich et al. (in prep) ,Unpublished - DO NOT USE BEFORE PUBLICATION,,,,McDowell
+30,Point,McClymont,0,0,MD02-2515,UK'37,27.4835,-112.0743,-881,65,Summer,"McClymont et al., 2012",,"Muller et al., 1998",,,Jones
+31,Point,McClymont,0,0,MD02-2515,Tex86,27.4835,-112.0743,-881,75,Subsurface,"McClymont et al., 2012",,"Kim et al., 2010;",,,Jones
+32,Point,Schmidt,0,0,KNR166-2-26JPC,Mg/Ca - G.ruber w.,24.3336,-83.254,-546,100,Annual,"Schmidt and Lynch-Steiglitz, 2011",,Anand et al. 2003,,,Jones
+33,Point,Boll,0,0,SO90-93KL,UK'37,23.60,64.20,-1802,312,,Boll et al. 2010,,,,,Hupp
+34,Point,Yang,0,0,SO204B,Mg/Ca - G. ruber,21.2303,118.0513,-1822,225,,"Yang et al., 2019",,"Dekens et al., 2002",,,Jones
+35,Point,Yang,0,0,SO204B,Mg/Ca - G. Inflata,21.2303,118.0513,-1822,225,,"Yang et al., 2019",,"Cleroux et al., 2008",,,Jones
+36,Point,Boll,0,0,MD00-2345,UK’37,21,61.5,-2740,144,,Boll et al. 2010,,,,,Hupp
+37,Point,Kim,0,0,GeoB7926-2,UK'37,20.2133,-18.4517,-2500,160,Annual,"Kim et al., 2012",,"Muller et al., 1998",,"McKay et al., 2014; Romero et al., 2008",Jones
+38,Point,Kim,0,0,GeoB7926-2,Tex86,20.2133,-18.4517,-2500,153,Annual Subsurface,"Kim et al., 2012",,"Kim et al., 2010",,"McKay et al., 2014; Romero et al., 2008",Jones
+39,Point,Yang,0,0,GHE27L,Mg/Ca - P. obliq.,19.85,115.34,-1533,152,,"Yang et al., 2019",,"Anand et al., 2003",,,Jones
+40,Point,Lauterbach,0,0,SO188-17286-1,UK'37,19.743,89.8793,-1428,215,Annual,"Lauterbach et al., 2020",,"Sonzogni et al., 1997",,,Jones
+41,Point,Weldeab,0,0,GeoB9310-4,Mg/Ca - G. ruber,19.2018,37.0415,-543,110,Annual,Weldeab et al. 2014,,,,,Marcott
+42,Point,Weldeab,0,0,GeoB9307-3,Mg/Ca - G. ruber,18.5650,37.3800,-542,140,Annual,Weldeab et al. 2014,,,,,Marcott
+43,Point,Panmei,0,0,MD161-17,Mg/Ca - G. ruber,16.0605,82.0215,-790,58,Annual,"Panmei et al., 2017",,"Anand et al., 2003",,,Jones
+44,Point,Zarriess,0,0,GeoB9508-5,Mg/Ca - G. ruber p.,15.4983,-17.9480,-2384,310,Summer(JAS)?,"Zarriess et al., 2011",,"Regenberg et al., 2009",,"Mulitza et al., 2008",Marcott
+45,Point,Tierney,0,0,RC09-166,UK'37,12.15,44.4,-738,1300,Summer,"Tierney et al., 2017",,"Sonzogni et al., 1997",*UK'37 = 0.023*SST + .316,,Jones
+46,Point,Loomis,0,0,03TL3,GDGT,12,37.25,1830,200,Annual,"Loomis et al., 2015",,"Loomis et al., 2012",MAAT=22.7–33.58*IIIa–12.88 ∗ IIa–418.53 ∗ IIc+86.43 ∗ Ib ,,Jones
+47,Point,Tierney,0,0,P178-15P,Tex86,11.955,44.3,-869,410,Summer,"Tierney et al., 2016",,,,,McDowell
+48,Point,Tierney,0,0,P178-15P,Uk37,11.955,44.3,-869,410,Summer,"Tierney et al., 2016",,,,,McDowell
+49,Point,Tierney,0,0,P178-15P,Mg/Ca - G.ruber,11.955,44.3,-869,430,Summer,"Tierney et al., 2016",,,,,McDowell
+50,Point,Schmidt,0,0,VM12-107,Mg/Ca - G.ruber w.,11.33,-66.63,-1079,170,Annual,"Schmidt et al., 2012",Located in upwelling region,"Anand et al., 2003",,,Jones
+51,Point,Schmidt,0,0,VM12-107,Mg/Ca - G. Crass,11.33,-66.63,-1079,170,Subsurface,"Schmidt et al., 2012",Intermediate depth foram; upwelling region,"Anand et al., 2003",,,Jones
+52,Point,Saraswat,0,0,SK237-GC04,Mg/Ca - G.ruber,10.9775,74.9993,-1245,110,,Saraswat et al. 2013,,,,,Marcott
+53,Point,Dubois,0,0,ME0005A-43JC,UK’37,7.85583,-83.60833,-1368,,,,100ka,,,,
+54,Point,Fraser,0,0,MD06-3075,UK'37,6.4762,125.8320,-1878,370,?,Fraser et al. 2014,,,,,Marcott
+55,Point,Schmidt,0,0,Fan17,Mg/Ca - G.ruber w.,4.81,4.45,-1178,168,Annual,"Parker et al., 2016",,"Anand et al., 2003",T = ln(MgCa/0.38)/0.09,"Jobe et al., 2017",Jones
+56,Point,Schmidt,0,0,Fan17,Mg/Ca - G. Crass,4.81,4.45,-1178,168,Subsurface,"Schmidt et al., 2017",Intermediate depth foram,"Anand et al., 2003",T = ln(MgCa/0.339)/0.09,"Jobe et al., 2017",Jones
+57,Point,Dubois,0,0,TR163-31P,UK'37,3.618667,-83.970667,-3205,422,,"Dubois et al., 2011",,,,,
+58,Point,Arbuszewski,0,0,VM25-59,Mg/Ca - G. ruber,1.367,-33.483,-3824,941,,"Arbuszewski et al., 2013",,,,,Jones
+59,Point,Loomis,0,0,Sacred2012,GDGT,0.0833,37.533,2350,320,Annual,"Loomis et al., 2012",Using published temperature calibration (proxy data unavailable),"Loomis et al., 2012",,"Olago et al., 2001",Jones
+60,Point,Dubois,0,0,ME0005A-24JC,UK'37,0.021667,-86.463,-2941,,,,100ka,,,,
+61,Point,Arbuszewski,0,0,VM30-40,Mg/Ca - G. ruber,-0.2,-23.15,-3706,807,,"Arbuszewski et al., 2013",,,,,Jones
+62,Point,Dyez,0,0,ODP1239,UK'37,-0.672,-82.081,-1414,362,Annual,"Dyez et al., 2016; Rincon-Martinez et al., 2010",,"Muller et al., 1998",SST = (Uk'37 - 0.044) / 0.033,"Paillard et al., 2005",Jones
+63,Point,Arbuszewski,0,0,RC24-08,Mg/Ca - G. ruber,-1.3366,-11.9,-3882,515,,"Arbuszewski et al., 2013",,,,,Jones
+64,Point,Dubois,0,0,ME0005A-27JC,UK’37,-1.8533,-82.7867,-2203,461,Summer,"Dubois et al., 2014",100ka,"Prahl et al., 1988",SST= (UK′37 − 0.039)/0.034,"Kienast et al., 2007",Jones
+65,Point,Arbuszewski,0,0,RC24-11,Mg/Ca - G. ruber,-2.18,-11.25,-3445,1000,,"Arbuszewski et al., 2013",,,,,Jones
+66,Point,Damste,0,0,Lake_Challa,GDGT,-3.32,34.319,880,110,,"Damste et al., 2012",,,,"Blaauw et al., 2011",McDowell
+67,Point,Schröder,0,0,SO217_2-3,Mg/Ca - G. ruber w.,-3.6299,119.3600,-688,80,Austral Winter,Schröder et al. 2016,,,,,Marcott
+68,Point,Nürnberg,0,0,M77/2_056-5,Mg/Ca - G. ruber,-3.7498,-81.1247,-355,130,Austral Winter,Nürnberg et al. 2015,,,,"Mollier-Vogel et al., 2013",Marcott
+69,Point,Nürnberg,0,0,M77/2_056-5,Mg/Ca - N. deut,-3.7498,-81.1247,-355,60,Annual,Nürnberg et al. 2015,,,,"Mollier-Vogel et al., 2013",Marcott
+70,Point,Nürnberg,0,0,M77/2_059-1,Mg/Ca - G. ruber,-3.9502,-81.3205,-997,100,Austral Winter,Nürnberg et al. 2015,,,,"Mollier-Vogel et al., 2013",Marcott
+71,Point,Nürnberg,0,0,M77/2_059-1,Mg/Ca - N. deut,-3.9502,-81.3205,-997,60,Annual,Nürnberg et al. 2015,,,,"Mollier-Vogel et al., 2013",Marcott
+72,Point,Nürnberg,0,0,M77/2_059-1,UK'37,-3.9502,-81.3205,-997,60,Summer,Nürnberg et al. 2015,,,,"Mollier-Vogel et al., 2013",Marcott
+73,Point,Windler,0,0,MD98-2152,UK'37,-6.33,103.88,-1796,2255,Summer ,"Windler et al., 2019",,,,,McDowell
+74,Point,Seitwawan,0,0,GeoB10042-1,Mg/Ca - G. ruber,-7.1135,104.6430,-2454,320,Annual,Seitwawan et al. 2015,,,,,Marcott
+75,Point,Seitwawan,0,0,GeoB10043-3,Mg/Ca - G. ruber,-7.3095,105.0588,-2171,520,Annual,Seitwawan et al. 2015,,"Anand et al., 2003",T = ln(MgCa/0.38)/0.09 [sic],,Marcott
+76,Point,Capelli,0,0,SO18471,Mg/Ca - G. ruber,-9.36645,29.983,-485,1000,Annual?,"Capelli et al., 2016",,"Anand et al., 2003",T = ln(MgCa/0.38)/0.09 [sic],,McDowell
+77,Point,Johnson,0,0,MAL05-1,Tex86,-11.29389,34.43722,378,368,Annual,"Johnson et al., 2016",,"Casteneda et al., 2015",ALST = 49.032(TEX ) − 10.989,"Scholz et al., 2007",Jones
+78,Point,Wang,0,0,GIK16160-3,UK'37,-18.2412,37.8685,-1339,209,Summer,"Wang et al., 2013",,"Sonzogni et al., 1997",SST= (UK'37 - 0.013)/0.023,,Jones
+79,Point,Wang,0,0,GIK16160-3,Mg/Ca - G.ruber w.,-18.2412,37.8685,-1339,241,Winter,"Wang et al., 2013",,"Anand et al., 2003",T = ln(MgCa/0.38)/0.09,,Jones
+80,Point,Dauner,0,0,NAP 63-1,UK'37,-24.8384,-44.318733,-842,931,Winter/Subsurface,"Dauner et al., 2019",,"Muller et al., 1998",SST=(UK'37-0.069)/0.033,,Jones
+81,Point,Dauner,0,0,NAP 63-1,Tex86,-24.8384,-44.318733,-842,931,Annual,"Dauner et al., 2019",,"Kim et al., 2010","SST=38.6+(68.4*TexH86), where TexH86= log10TexH86",,Jones
+82,Point,Dauner,0,0,NAP 63-1,LDI,-24.8384,-44.318733,-842,931,Annual/Summer,"Dauner et al., 2019",,"Rampen et al., 2012",SST= (LDI -0.095)/0.033,,Jones
+83,Point,Dyez,0,0,MD02-2594,Mg/Ca - G.ruber w.,-34.71,17.338,-2440,363,Annual,"Dyez et al., 2014",,Anand et al. 2003,,,Jones
+84,Point,Lopes Dos Santos,0,0,MD03-2607,UK'37,-36.9607,137.4065,-865,421,Annual,"Lopos Dos Santos et al., 2013",,"Muller et al., 1998",T = (UK'37 - 0.044)/(0.033),,Jones
+85,Point,Lopes Dos Santos,0,0,MD03-2607,Tex86,-36.9607,137.4065,-865,421,Winter,"Lopos Dos Santos et al., 2013",,"Kim et al., 2010;",SST=68.4*(Log10(TEXH 86))+38.6,,Jones
+86,Point,Lopes Dos Santos,0,0,MD03-2607,LDI,-36.9607,137.4065,-865,421,Summer,"Lopos Dos Santos et al., 2013",,"Rampen et al., 2012",SST=(LDI-0.095)/0.033,,Jones
+87,Point,Sikes,0,0,RR0503-87JPC,UK'37,-37.26,176.64,-663,210,Summer,"Sikes et al., 2019",,"Prahl et al., 1988",,,Jones
+88,Point,Sikes,0,0,RR0503-87JPC,Mg/Ca - G. Bulloides,-37.26,176.64,-663,210,Spring,"Sikes et al., 2019",,"Mashiota, 1999",,,Jones
+89,Point,Sikes,0,0,RR0503-87TC,UK'37,-37.26,176.64,-663,187,Summer,"Sikes et al., 2019",,"Prahl et al., 1988",,,Jones
+90,Point,Haddam,0,0,MD07-3100,Foram Assemblage,-41.6,-74.95,-1609,200 (deglacial),Summer,"Haddam et al., 2018",,"Haddam et al., 2016",,,Jones
+91,Point,Anderson,0,0,TN057-06-PC4,UK'37,-42.91,8.9,-3571,400,,"Anderson, 2014",,"Prahl et al., 1988",,,Jones
+92,Point,Haddam,0,0,MD07-3088,UK’37,-46.067,-75.683,-1536,90,Spring,"Haddam et al., 2018",,"Prahl et al., 1988; Muller et al., 1998",Prahl: T = (UK'37 - 0.039)/(0.034); Muller: T = (UK'37 - 0.044)/(0.033),"Siani et al., 2013",Jones
+93,Point,Haddam,0,0,MD07-3088,Foram Assemblage,-46.067,-75.683,-1536,90,Summer,"Haddam et al., 2018",,"Haddam et al., 2016",,"Siani et al., 2013",Jones
+94,Point,Haddam,0,0,MD07-3082,Foram Assemblage,-49.167,-76.567,-1792,210 (deglacial),Summer,"Haddam et al., 2018",,"Haddam et al., 2016",,,Jones
+95,Point,Caniupan,0,0,NBP05-05JPC42,UK'37,-49.917,-74.383,-904,110,Summer,"Caniupan et al., 2011",Holocene,"Prahl et al., 1988",T = (UK'37 - 0.039)/(0.034),,Jones
+96,Point,Caniupan,0,0,MD07-3124,UK'37,-50.516,-74.972167,-564,100,Summer,"Caniupan et al., 2014",Holocene,"Prahl et al., 1988",T = (UK'37 - 0.039)/(0.034),,Jones
+97,Point,Caniupan,0,0,MD07-3128,UK'37,-52.6595,-75.56616,-1032,150 (deglacial),Summer,"Caniupan et al., 2011",,"Prahl et al., 1988",T = (UK'37 - 0.039)/(0.034),,Jones
+98,Point,Caniupan,0,0,CHURR,UK'37,-53.033,-73.9,-80,200,Summer,"Caniupan et al., 2014",Holocene,"Prahl et al., 1988",T = (UK'37 - 0.039)/(0.034),,Jones
+99,Point,Wang,0,0,SZY,GDGT,26.767,119.033,1007,400,Summer,"Wang et al., 2017",,"Weijers et al., 2007a",,,Jones
+100,Point,Zhang,0,0,TCK1,Chironomid,26.634389,99.716667,3900,84,Summer (July),"Zhang et al., 2017",,"Zhang et al., 2017 (separate paper)",,,Jones
