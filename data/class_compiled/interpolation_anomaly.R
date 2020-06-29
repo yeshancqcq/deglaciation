@@ -1,12 +1,13 @@
 library(plyr)
 library(astrochron)
 library(stats)
+library(readr)
 
-metadata <- read_csv("data/metadata.csv")
+metadata <- read_csv("class_metadata.csv")
 temp_data <- metadata
 anomaly_data <- metadata
 
-files <- list.files(path="lipd2csv_data", 
+files <- list.files(path="raw_csv", 
                     pattern="*.csv", full.names=TRUE, recursive=FALSE)
 
 
@@ -15,7 +16,7 @@ lapply(files, function(x) {
   filename <- basename(x)
   
   # selecting only relevant columns
-  dt <- data.frame(age = data$age, temperature = data$temperature)
+  dt <- data.frame(age = data$Age, temperature = data$Temperature)
   
   # removing all na
   dt <- na.omit(dt)
@@ -79,7 +80,7 @@ lapply(files, function(x) {
     }
     
     # Writing the csv
-    write.csv(dt_df, paste0("anomaly_interpolated/", filename), row.names=F)
+    write.csv(dt_df, paste0("class_anomaly_interp/", filename), row.names=F)
 
 
   }
