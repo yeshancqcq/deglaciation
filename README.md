@@ -23,15 +23,20 @@ https://github.com/yeshancqcq/deglaciation/blob/master/interpolation_anomaly.R
 
 ## Step 3. Join interpolated temperature and anomaly to metadata -- prepare for the spatiotemporal reconstruction
 Use join.R
+
 Better to have a helper.csv file prepared from excel.
+
 This file should only contains fieldnames from t0 to t22000
+
 Results: 2 metadata files (anomaly_metadata.csv and temperature_metadata.csv)
 https://github.com/yeshancqcq/deglaciation/blob/master/join.R
 
 ## Step 4. Spatiotemporal reconstruction.
 If using ArcGIS: 
 Import the csv metadata and convert it into a point shapefile
+
 Preparing girds with Grid_Index_Feature, Then
+
 Point To Raster --> Zonal Statistics as table--> Join back to the shapefile
 
 If using ArcPy:
@@ -39,6 +44,7 @@ https://github.com/yeshancqcq/paleo_data_spatial/blob/master/arcgis.py
 
 Without ArcPy:
 https://github.com/yeshancqcq/deglaciation/blob/master/spatiotemporal_reconstruction.R
+
 and then: hemispheric reconstruction and plotting:
 https://github.com/yeshancqcq/deglaciation/blob/master/hemisphere_construction.R
 
