@@ -422,7 +422,7 @@ write.csv(diff_hemi,"data/diff_hemi.csv")
 
 # plot NH ++++++++++++++++++++++++++
 
-plot_data <- data.frame(time=proxy_hemi$time, proxy=proxy_hemi$NH, model=model_hemi$NH, diff=diff_hemi$NH)
+plot_data <- data.frame(time=proxy_hemi$time, proxy=proxy_hemi$NH, model=model_hemi$NH)
 plot <- ggplot()+
   geom_line(data=plot_data,aes(time, proxy, colour = "Anomaly in Proxy Data"))+
   geom_line(data=plot_data,aes(time, model, colour = "Anomaly in Model Data"))+
@@ -458,7 +458,7 @@ ggsave("img/hemisphere/NH.jpg", width = 6, height = 4)
 
 # plot SH ++++++++++++++++++++++++++
 
-plot_data <- data.frame(time=proxy_hemi$time, proxy=proxy_hemi$SH, model=model_hemi$SH, diff=diff_hemi$SH)
+plot_data <- data.frame(time=proxy_hemi$time, proxy=proxy_hemi$SH, model=model_hemi$SH)
 plot <- ggplot()+
   geom_line(data=plot_data,aes(time, proxy, colour = "Anomaly in Proxy Data"))+
   geom_line(data=plot_data,aes(time, model, colour = "Anomaly in Model Data"))+
