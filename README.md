@@ -38,7 +38,9 @@ If using ArcPy:
 https://github.com/yeshancqcq/paleo_data_spatial/blob/master/arcgis.py
 
 Without ArcPy:
-TBA
+https://github.com/yeshancqcq/deglaciation/blob/master/spatiotemporal_reconstruction.R
+and then: hemispheric reconstruction and plotting:
+https://github.com/yeshancqcq/deglaciation/blob/master/hemisphere_construction.R
 
 ## Step 5. Regional average
 With or without model
