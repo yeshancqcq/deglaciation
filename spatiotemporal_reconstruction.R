@@ -1,8 +1,8 @@
 library(readr)
 grid_anomaly <- read_csv("data/grid_anomaly_helper.csv")
-anomaly_data <- read_csv("data/anomaly_all_compile_cleared.csv")
-grid_temperature <- read_csv("data/grid_temperature_helper.csv")
-temperature_data <- read_csv("data/temperature_all_compile.csv")
+anomaly_data <- read_csv("data/anomaly_all_compile.csv")
+#grid_temperature <- read_csv("data/grid_temperature_helper.csv")
+#temperature_data <- read_csv("data/temperature_all_compile.csv")
 
 #===anomaly====
 for(x in 29:ncol(anomaly_data)){
