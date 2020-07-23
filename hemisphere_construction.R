@@ -7,9 +7,9 @@ model_anomaly <- model_anomaly[-1]
 model_data <- model_anomaly
 
 proxy_data <- read_csv("data/grid_anomaly.csv")
-proxy_data <- proxy_data[-1]
+#proxy_data <- proxy_data[-1]
 
-proxy_data2 <- proxy_data[,10:230]
+proxy_data2 <- proxy_data[,12:230]
 proxy_data2$sum <- rowSums (proxy_data2, na.rm = TRUE, dims = 1)
 proxy_data$sum <- proxy_data2$sum
 
@@ -121,7 +121,7 @@ for(i in 1:nrow(proxy_data)){
   ){
     for(j in 1:220){
       #change here
-      temp[j,k]<-proxy_data[i,j+10]
+      temp[j,k]<-proxy_data[i,j+11]
     }
     k <- 1+k
     cat("finishing ", model_data$PageName[i] )
@@ -203,7 +203,7 @@ for(i in 1:nrow(proxy_data)){
   ){
     for(j in 1:220){
       #change here
-      temp[j,k]<-proxy_data[i,j+10]
+      temp[j,k]<-proxy_data[i,j+11]
     }
     k <- 1+k
     cat("finishing ", model_data$PageName[i] )
@@ -285,7 +285,7 @@ for(i in 1:nrow(proxy_data)){
   ){
     for(j in 1:220){
       #change here
-      temp[j,k]<-proxy_data[i,j+10]
+      temp[j,k]<-proxy_data[i,j+11]
     }
     k <- 1+k
     cat("finishing ", model_data$PageName[i] )
@@ -372,7 +372,7 @@ for(i in 1:nrow(proxy_data)){
   ){
     for(j in 1:220){
       #change here
-      temp[j,k]<-proxy_data[i,j+10]
+      temp[j,k]<-proxy_data[i,j+11]
     }
     k <- 1+k
     cat("finishing ", model_data$PageName[i] )
@@ -432,11 +432,11 @@ plot <- ggplot()+
     'Anomaly in Model Data' = 'red'
   ))+  
   geom_hline(yintercept = 0, size = 0.6, linetype='dotted') +
-  scale_y_continuous(name = expression("Temperature Anomaly (째C)"), limits = c(-6, 3))+
+  scale_y_continuous(name = expression("Temperature Anomaly (캜)"), limits = c(-6, 3))+
   labs(y = "Anomaly",
        x = "Time (Years BP)",
        colour = 'Legend') +
-  ggtitle("Temperature Anomaly 25째N ~ 90째N") +
+  ggtitle("Temperature Anomaly 25캮 ~ 90캮") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line.x = element_line(colour = "black"),
         axis.title.y=element_text(size=10),
@@ -468,11 +468,11 @@ plot <- ggplot()+
     'Anomaly in Model Data' = 'red'
   ))+  
   geom_hline(yintercept = 0, size = 0.6, linetype='dotted') +
-  scale_y_continuous(name = expression("Temperature Anomaly (째C)"), limits = c(-6, 3))+
+  scale_y_continuous(name = expression("Temperature Anomaly (캜)"), limits = c(-6, 3))+
   labs(y = "Anomaly",
        x = "Time (Years BP)",
        colour = 'Legend') +
-  ggtitle("Temperature Anomaly 25째S ~ 90째S") +
+  ggtitle("Temperature Anomaly 25캳 ~ 90캳") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line.x = element_line(colour = "black"),
         axis.title.y=element_text(size=10),
@@ -504,11 +504,11 @@ plot <- ggplot()+
     'Anomaly in Model Data' = 'red'
   ))+  
   geom_hline(yintercept = 0, size = 0.6, linetype='dotted') +
-  scale_y_continuous(name = expression("Temperature Anomaly (째C)"), limits = c(-6, 3))+
+  scale_y_continuous(name = expression("Temperature Anomaly (캜)"), limits = c(-6, 3))+
   labs(y = "Anomaly",
        x = "Time (Years BP)",
        colour = 'Legend') +
-  ggtitle("Temperature Anomaly 25째S ~ 25째N") +
+  ggtitle("Temperature Anomaly 25캳 ~ 25캮") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line.x = element_line(colour = "black"),
         axis.title.y=element_text(size=10),
