@@ -72,3 +72,10 @@ https://github.com/yeshancqcq/paleo_data_spatial/blob/master/Untitled.mxd
 https://github.com/yeshancqcq/paleo_data_spatial/blob/master/paleo_process1.mxd
 https://github.com/yeshancqcq/paleo_data_spatial/blob/master/mapping_series.py
 
+# Latest files to use
+Gridded data: model_sealand.csv and proxy_sealand.csv
+
+Package data: model_lat_band3.csv and proxy_lat_band3.csv
+
+Regional packages: model_region.csv and proxy_region.csv
+
