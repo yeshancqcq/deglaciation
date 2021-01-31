@@ -103,7 +103,7 @@ for(i in 1:nrow(proxy_data)){
     grid_AN <- c(grid_AN, proxy_data$PageName[i])
   }
 }
-
+proxy_data <- proxy_data[1:(length(proxy_data)-1)]
 # AN =================================
 x = AN
 #model
@@ -137,7 +137,7 @@ for(row in 1:nrow(temp)){
   } else{
     temp[row,x+2]<-sum/ct
   }
-  cat("finishing row ", i, "; ")
+  cat("finishing row ", row, "; ")
 }
 
 for(i in 1:220){
@@ -145,9 +145,11 @@ for(i in 1:220){
 }
 
 #proxy
+x = AN
 #change here
 temp <- data.frame(matrix(vector(),220,x+2))
 temp$X1 <- seq(100,22000,100)
+#starting from the 2nd col
 k <- 2
 for(i in 1:nrow(proxy_data)){
   if(proxy_data$PageName[i] %in% grid_AN
@@ -157,7 +159,7 @@ for(i in 1:nrow(proxy_data)){
       temp[j,k]<-proxy_data[i,j+16]
     }
     k <- 1+k
-    cat("finishing ", model_data$PageName[i] )
+    cat("finishing ", proxy_data$PageName[i] )
   }
 }
 #average
@@ -178,7 +180,7 @@ for(row in 1:nrow(temp)){
   } else{
     temp[row,x+2]<-sum/ct
   }
-  cat("finishing row ", i, "; ")
+  cat("finishing row ", row, "; ")
 }
 
 for(i in 1:220){
@@ -219,7 +221,7 @@ for(row in 1:nrow(temp)){
   } else{
     temp[row,x+2]<-sum/ct
   }
-  cat("finishing row ", i, "; ")
+  cat("finishing row ", row, "; ")
 }
 
 for(i in 1:220){
@@ -1084,11 +1086,14 @@ ggsave("img/hemisphere/Tropical_lat_band.jpg", width = 6, height = 4)
 # ===============================Sea Land===========================================
 land = 177
 sea = 148
+all = land + sea
 
 model_hemi$land = NA
 proxy_hemi$land = NA
 model_hemi$sea = NA
 proxy_hemi$sea = NA
+model_hemi$all = NA
+proxy_hemi$all = NA
 
 #land ==============================
 x = land
@@ -1255,8 +1260,92 @@ for(i in 1:220){
   proxy_hemi$sea[i]<-temp[i,x+2]
 }
 
-write.csv(proxy_hemi,"data/proxy_lat_band.csv")
-write.csv(model_hemi,"data/model_lat_band.csv")
+# ========================all=========================
+
+x = all
+#model
+#change here
+temp <- data.frame(matrix(vector(),220,x+2))
+temp$X1 <- seq(100,22000,100)
+k <- 2
+for(i in 1:nrow(proxy_data)){
+  if(!(is.na(model_data$sea_land[i])) &
+     model_data$sea_land[i] == "sea" || model_data$sea_land[i] == "land"
+  ){
+    for(j in 1:220){
+      temp[j,k]<-model_data[i,j+11]
+    }
+    k <- 1+k
+    cat("finishing ", model_data$PageName[i] )
+  }
+}
+#average
+for(row in 1:nrow(temp)){
+  ct <- 0
+  sum <- 0
+  #change here
+  for(col in 2:(x+1)){
+    sum <- sum + temp[row,col]
+    if(temp[row,col]!=0){
+      ct <- ct + 1
+    }
+  }
+  if(ct==0){
+    temp[row,x+2]<-NA
+  } else{
+    temp[row,x+2]<-sum/ct
+  }
+  cat("finishing row ", row, "; ")
+}
+
+for(i in 1:220){
+  model_hemi$sea[i]<-temp[i,x+2]
+}
+
+#proxy
+#change here
+temp <- data.frame(matrix(vector(),220,x+2))
+temp$X1 <- seq(100,22000,100)
+k <- 2
+for(i in 1:nrow(proxy_data)){
+  if(!(is.na(proxy_data$sea_land[i])) &
+     proxy_data$sea_land[i] == "sea" || proxy_data$sea_land[i] == "all"
+  ){
+    for(j in 1:220){
+      #change here
+      temp[j,k]<-proxy_data[i,j+16]
+    }
+    k <- 1+k
+    cat("finishing ", model_data$PageName[i] )
+  }
+}
+#average
+for(row in 1:nrow(temp)){
+  ct <- 0
+  sum <- 0
+  for(col in 2:(x+1)){
+    sum <- sum + temp[row,col]
+    if(temp[row,col]!=0){
+      ct <- ct + 1
+    }
+  }
+  if(ct==0){
+    #change here
+    temp[row,x+2]<-NA
+  } else{
+    temp[row,x+2]<-sum/ct
+  }
+  cat("finishing row ", row, "; ")
+}
+
+for(i in 1:220){
+  #change here
+  proxy_hemi$sea[i]<-temp[i,x+2]
+}
+
+
+write.csv(proxy_hemi,"data/proxy_lat_band3.csv")
+write.csv(model_hemi,"data/model_lat_band3.csv")
 
 # se_usa =====================
 x=se_usa
