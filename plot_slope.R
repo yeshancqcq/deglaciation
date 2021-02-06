@@ -14,21 +14,22 @@ trends$band <- factor(trends$band, levels = c("NH High Lat","NH Mid Lat", "Low L
 all <- ggplot()+
   geom_vline(xintercept = 0, colour = 'black',linetype="dashed")+
   geom_hline(yintercept = 0, colour = 'black',linetype="dashed")+
-  geom_point(data=trends,aes(p_all_slope, m_all_slope, colour=band),size = 3)+
+  geom_point(data=trends,aes(p_all_slope, m_all_slope, colour=band),size = 3.5)+
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_rect(colour="black", fill = NA), 
         axis.line = element_line(color = "black"),
-        axis.text = element_text(size = 10),
+        axis.text = element_text(size = 12),
         legend.justification = c(0, 0),
         axis.text.x = element_blank(),
         #axis.ticks.x = element_blank(),
         axis.title.x = element_blank(),
+        axis.title.y = element_text(size=12),
         legend.position = "none",
         legend.background = element_rect(colour=NA, fill = NA),
         legend.key = element_rect(colour = "white", fill = NA)
   )+
-  annotate("text", x = -9.8e-4, y = -9e-4, label = "A")+
-  annotate("text", x = 8e-4, y = -9e-4, label = "22 ka to present")+
+  annotate("text", x = -8.8e-4, y = -9e-4, label = "A",size=7)+
+  annotate("text", x = 6e-4, y = -9e-4, label = "22 ka to present", size = 7)+
   labs(y = "Model Data Trend",
        x = "Proxy Data Trend",
        colour = "Latitude Band")+
@@ -37,7 +38,7 @@ all <- ggplot()+
     "NH High Lat" = "light blue",
     "NH Mid Lat" = "blue",
     "SH High Lat" = "gray70",
-    "SH Mid Lat" = "black"
+    "SH Mid Lat" = "#50de76"
   ))+
   scale_x_continuous(expand = c(0, 0), limits = c(-0.001, 0.001), breaks = scales::pretty_breaks(n = 10))+
   scale_y_continuous(expand = c(0, 0), limits = c(-0.001, 0.001), breaks = scales::pretty_breaks(n = 10))
@@ -50,21 +51,23 @@ all
 deg <- ggplot()+
   geom_vline(xintercept = 0, colour = 'black',linetype="dashed")+
   geom_hline(yintercept = 0, colour = 'black',linetype="dashed")+
-  geom_point(data=trends,aes(p_deg_slope, m_deg_slope, colour=band),size = 3)+
+  geom_point(data=trends,aes(p_deg_slope, m_deg_slope, colour=band),size = 3.5)+
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_rect(colour="black", fill = NA), 
         axis.line = element_line(color = "black"),
         axis.text = element_text(size = 10),
         legend.justification = c(0, 0),
         axis.text.x = element_blank(),
+        axis.text.y = element_text(size=12),
         #axis.ticks.y = element_blank(),
+        axis.title.y = element_text(size=12),
         axis.title.x = element_blank(),
         legend.position = "none",
         legend.background = element_rect(colour=NA, fill = NA),
         legend.key = element_rect(colour = "white", fill = NA)
   )+
-  annotate("text", x = -9.8e-4, y = -9e-4, label = "B")+
-  annotate("text", x = 8e-4, y = -9e-4, label = "22 - 11.5 ka")+
+  annotate("text", x = -8.8e-4, y = -9e-4, label = "B",size = 7)+
+  annotate("text", x = 7e-4, y = -9e-4, label = "22 - 11.5 ka",size = 7)+
   labs(y = "Model Data Trend",
        x = "Proxy Data Trend",
        colour = "Latitude Band")+
@@ -73,7 +76,7 @@ deg <- ggplot()+
     "NH High Lat" = "light blue",
     "NH Mid Lat" = "blue",
     "SH High Lat" = "gray70",
-    "SH Mid Lat" = "black"
+    "SH Mid Lat" = "#50de76"
   ))+
   scale_x_continuous(expand = c(0, 0), limits = c(-0.001, 0.001), breaks = scales::pretty_breaks(n = 10))+
   scale_y_continuous(expand = c(0, 0), limits = c(-0.001, 0.001), breaks = scales::pretty_breaks(n = 10))
@@ -86,21 +89,24 @@ deg
 hol <- ggplot()+
   geom_vline(xintercept = 0, colour = 'black',linetype="dashed")+
   geom_hline(yintercept = 0, colour = 'black',linetype="dashed")+
-  geom_point(data=trends,aes(p_hol_slope, m_hol_slope, colour=band),size = 3)+
+  geom_point(data=trends,aes(p_hol_slope, m_hol_slope, colour=band),size = 3.5)+
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_rect(colour="black", fill = NA), 
         axis.line = element_line(color = "black"),
-        axis.text = element_text(size = 10),
+        axis.text = element_text(size = 12),
+        axis.title = element_text(size = 12),
         legend.justification = c(0, 0),
         #axis.text.y = element_blank(),
         #axis.ticks.y = element_blank(),
         #axis.title.y = element_blank(),
         legend.position = c(0.05,0.2),
+        legend.title = element_text(size = 15),
+        legend.text = element_text(margin = margin(t = 3), size=rel(1.2)),
         legend.background = element_rect(colour=NA, fill = 'white'),
         legend.key = element_rect(colour = "white", fill = NA)
   )+
-  annotate("text", x = -9.8e-4, y = -9e-4, label = "C")+
-  annotate("text", x = 8e-4, y = -9e-4, label = "11.5 ka to present")+
+  annotate("text", x = -8.8e-4, y = -9e-4, label = "C", size = 7)+
+  annotate("text", x = 6e-4, y = -9e-4, label = "11.5 ka to present", size = 7)+
   labs(y = "Model Data Trend",
        x = "Proxy Data Trend",
        colour = "Latitude Band")+
@@ -109,7 +115,7 @@ hol <- ggplot()+
     "NH High Lat" = "light blue",
     "NH Mid Lat" = "blue",
     "SH High Lat" = "gray70",
-    "SH Mid Lat" = "black"
+    "SH Mid Lat" = "#50de76"
   ))+
   scale_x_continuous(expand = c(0, 0), limits = c(-0.001, 0.001), breaks = scales::pretty_breaks(n = 10))+
   scale_y_continuous(expand = c(0, 0), limits = c(-0.001, 0.001), breaks = scales::pretty_breaks(n = 10))
