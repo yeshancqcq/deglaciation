@@ -1,5 +1,6 @@
 library(readr)
 X1 <- read_csv(x)
+setwd("C:/Users/yesha/Documents/GitHub/deglaciation")
 
 filenames <- list.files(path = "Holocene_data/raw_data/", pattern=NULL, all.files=FALSE,
                         full.names=FALSE)
@@ -143,6 +144,8 @@ write.csv(total_res, file="GitHub/deglaciation/data/resolution.csv",fileEncoding
 
 #======= plots ========
 
+total_res <- read_csv("data/resolution.csv")
+
 library(ggplot2)
 # Basic density
 p <- ggplot() + 
@@ -168,29 +171,28 @@ p+ geom_vline(aes(xintercept=mean(weight)),
 
 
 p <- ggplot()+
-  geom_histogram(data = total_res, aes(x=resolution_holocene, color = "Holocene", fill = "Holocene"),binwidth = 5, alpha = 0.5) +
-  geom_histogram(data = total_res, aes(x=resolution_deglacier, color = "Deglaciation", fill = "Deglaciation"),binwidth = 5, alpha = 0.5) +
-  scale_x_continuous(limits = c(5,1000), breaks = scales::pretty_breaks(n = 10))+
+  geom_histogram(data = total_res, aes(x=resolution_holocene, fill = "11.5 Ka ~ Present"),binwidth = 10, alpha = 0.4) +
+  geom_histogram(data = total_res, aes(x=resolution_deglacier, fill = "22 ~ 11.5 Ka"),binwidth = 10, alpha = 0.5) +
+  scale_x_continuous(expand = c(0, 0),limits = c(5,1015), breaks = scales::pretty_breaks(n = 10))+
+  scale_y_continuous(expand = c(0, 0),name = expression("Number of Data Points"), limits = c(0, 50),  breaks = scales::pretty_breaks(n = 10))+
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_rect(colour="black", fill = NA), 
         axis.line = element_line(colour = "black"),
-        axis.text.y = element_text(size = 10),
+        axis.text = element_text(size = 12),
+        axis.title = element_text(size = 12),
         legend.justification = c(0, 0),
-        legend.position = c(0.7, 0.7),
+        legend.position = c(0.6, 0.7),
+        legend.text = element_text(margin = margin(t = 3), size=rel(1.2)),
         legend.key = element_rect(colour = "white", fill = NA)
   )+
-  labs(y = "Count",
+  labs(y = "Num. of Data Points",
        x = "Resolution",
-       colour = "Legend",
-       fill = "Legend"
+       colour = "",
+       fill = ""
   )+
-  scale_color_manual(values = c(
-    "Deglaciation" = "blue",
-    "Holocene" = "salmon"
-  ))+
   scale_fill_manual(values = c(
-    "Deglaciation" = "blue",
-    "Holocene" = "salmon"
+    "11.5 Ka ~ Present" = "gray30",
+    "22 ~ 11.5 Ka" = "salmon"
   ))
 p
 
