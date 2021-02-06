@@ -1269,8 +1269,8 @@ temp <- data.frame(matrix(vector(),220,x+2))
 temp$X1 <- seq(100,22000,100)
 k <- 2
 for(i in 1:nrow(proxy_data)){
-  if(!(is.na(model_data$sea_land[i])) &
-     model_data$sea_land[i] == "sea" || model_data$sea_land[i] == "land"
+  if(!(is.na(model_data$sea_land[i])) &&
+    ( model_data$sea_land[i] == "sea" || model_data$sea_land[i] == "land")
   ){
     for(j in 1:220){
       temp[j,k]<-model_data[i,j+11]
@@ -1299,7 +1299,7 @@ for(row in 1:nrow(temp)){
 }
 
 for(i in 1:220){
-  model_hemi$sea[i]<-temp[i,x+2]
+  model_hemi$Global[i]<-temp[i,x+2]
 }
 
 #proxy
@@ -1308,8 +1308,8 @@ temp <- data.frame(matrix(vector(),220,x+2))
 temp$X1 <- seq(100,22000,100)
 k <- 2
 for(i in 1:nrow(proxy_data)){
-  if(!(is.na(proxy_data$sea_land[i])) &
-     proxy_data$sea_land[i] == "sea" || proxy_data$sea_land[i] == "all"
+  if(!(is.na(proxy_data$sea_land[i])) &&
+     (proxy_data$sea_land[i] == "sea" || proxy_data$sea_land[i] == "land")
   ){
     for(j in 1:220){
       #change here
@@ -1340,7 +1340,7 @@ for(row in 1:nrow(temp)){
 
 for(i in 1:220){
   #change here
-  proxy_hemi$sea[i]<-temp[i,x+2]
+  proxy_hemi$Global[i]<-temp[i,x+2]
 }
 
 
